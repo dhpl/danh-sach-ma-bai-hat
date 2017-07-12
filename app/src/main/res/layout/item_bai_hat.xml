@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:padding="5dp"
+       >
+       <TextView
+           android:id="@+id/txtMaBaiHat"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           tools:text="Mã bài hát"
+           android:textSize="15sp"
+           android:gravity="center"
+           android:textColor="@color/colorPrimary"
+           />
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="3"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="10dp"
+           android:padding="5dp"
+           >
+           <TextView
+               android:id="@+id/txtTenBaiHat"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               tools:text="Tên bài hát"
+               android:textSize="15sp"
+               android:textStyle="bold"
+               />
+           <TextView
+               android:id="@+id/txtLoiBatHat"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               tools:text="Lời bài hát"
+               android:layout_marginTop="5dp"
+               android:textStyle="italic"
+               />
+       </LinearLayout>
+       <ImageView
+           android:id="@+id/imgYeuThich"
+           android:layout_width="25dp"
+           android:layout_height="50dp"
+           android:src="@drawable/ic_favorite_border"
+           android:layout_gravity="center"
+           android:layout_margin="5dp"
+           />
+   </LinearLayout>
+</android.support.v7.widget.CardView>
